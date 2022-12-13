@@ -1,0 +1,514 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,200;1,200&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'veral', sans-serif;
+}
+
+/* h1 {font-size: 50px;
+line-height: 64px;
+color:black;
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;
+} */
+#navbar {
+    width: 100%;
+    position: fixed;
+    padding: 25px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(230, 113, 97);
+    height: 70px;
+    padding: 0;
+    justify-content: space-between;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* .logo {
+    width: 150px;
+    float: left;
+    color: black;
+    border: 2px solid yellow;
+} */
+
+#navbar .logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar .logo span {
+    color: #fff;
+}
+
+#navbar .menu ul {
+    display: flex;
+}
+
+#navbar .menu ul li {
+    padding: 21px; 
+    list-style: none;
+    /* padding-left: 50px; */
+}
+
+#navbar .menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 15px;
+}
+
+#navbar .menu ul li a.active,
+#navbar .menu ul li a:hover {
+    color: #fff;
+}
+
+#navbar .menu ul li a:hover {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+#navbar .menu ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(230, 113, 97);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+#navbar .menu ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+#navbar .menu ul li:hover .sub-menu-1 ul li {
+    padding: 15px;
+}
+
+#navbar .menu ul li:hover .sub-menu-1 ul li a {
+    /* text-align: center; */
+    /* color: white; */
+    padding: 10px;
+    text-decoration: dotted;
+}
+
+/* home section? */
+
+#home {
+    width: 100%;
+    height: 900px;
+    background-image: url("mosque-4.jpg");
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid red;
+    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3); */
+}
+
+/* #home .heading{
+    padding: 23px; ?
+} */
+.heading h1 {
+    padding: 200px 0px 40px;
+    text-align: center;
+    font-size: 35px;
+    /* border: 1px solid black; */
+    /* color: red; */
+}
+
+/* .heading h5 {
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 20px;
+
+} */
+.heading button {
+    margin-left: 550px;
+    background-image: url(button.png);
+    background-color: transparent;
+    border: 0;
+    margin-top: 30px;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 2px solid red;
+    font-weight: 600;
+    font-size: 13.5px;
+}
+
+.container {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 400px;
+    position: relative;
+    flex-wrap: nowrap;
+    left: 0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    /* position: fixed; */
+
+}
+
+#packages {
+    align-items: center;
+    background-color: rgb(230, 113, 97);
+    /* border: 2px solid yellow; */
+    width: 1500px;
+    padding: 35px;
+    height: 600px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container h2 {
+    background-color: rgb(230, 113, 97);
+    text-align: center;
+    font-size: 35px;
+    padding-top: 25px;
+    display: block;
+    /* border: 2px solid black; */
+}
+
+/* .card {
+        /* border: 1px solid black;
+        flex-wrap: wrap;
+        border-radius: 9px;
+        margin: 10px 10px;
+        box-sizing: border-box;
+        height: 250px;
+        width: 33%;
+        transition: transform .5s;
+ }
+ .card .detail{
+    text-align: center;
+ }
+ .card .detail img{
+     width: 100%;
+     position: relative;
+     background-size: cover; 
+     bottom: 350px;
+     position: relative;
+     border-radius: 25px;
+    }
+    .card .detail img .imgsecond{
+        bottom:10px;
+    }
+ .card:hover{
+    transform: scale(0.9); */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+#card{
+    border: 5px solid black;
+    /* padding: 0; */
+    width: 100%;
+
+}
+.flip-card {
+    display: inline-block;
+    background-color: transparent;
+    width: 300px;
+    justify-content: space-between;
+    margin: 10px;
+    height: 500px;
+    /* margin-top: 25px; */
+    /* margin-left: 25px; */
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card img {
+    /* border-radius: 14px; */
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: transparent;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: transparent;
+    color: black;
+    transform: rotateY(180deg);
+    border-top-left-radius: 35px;
+}
+
+.flip-card-back h1 {
+    color: black;
+    margin-top: 10px;
+
+}
+
+.flip-card-back p {
+    color: black;
+}
+
+button {
+    margin: 5px;
+    color: #fff;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    padding: 5px 25px;
+    background-color: transparent;
+    transition: transform .7s;
+
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    margin: 12px -35px;
+    width: 1400px;
+    height: 500px;
+    padding: 25px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .sub-banner-1 {
+    /* border:  1px solid red; */
+    border-radius: 18px;
+    width: 25%;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    height: 200px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.banner .sub-banner-1 .banner-detail {
+    border-radius: 18px;
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 250px;
+    background-color: rgb(230, 113, 97);
+}
+
+.banner .sub-banner-1 .banner-detail h1 {
+    margin-top: 15px;
+    text-align: center;
+
+    /* border-bottom: dotted white 5px; */
+
+}
+
+.banner .sub-banner-1 .banner-detail p {
+    color: #fff;
+}
+
+.banner .sub-banner-1 .list-banner {
+    /* border: 2px solid yellow; */
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+.banner .sub-banner-1 .list-banner ul {
+    /* border: 2px solid red; */
+    height: 150px;
+    background-color: rgb(230, 113, 97);
+    /* margin: 10px ; */
+}
+
+.banner .sub-banner-1 .list-banner ul li {
+    /* border: 2px solid crimson; */
+    list-style: none;
+    padding: 10px;
+    /* border-bottom: dotted; */
+}
+
+.banner .sub-banner-1 .list-banner ul li a {
+    text-decoration: none;
+    /* margin: 15px; */
+    list-style: none;
+    color: white;
+}
+
+footer {
+    background-color: rgb(248, 210, 210);
+    /* border: 2px solid black; */
+    /* background-color: aliceblue; */
+    margin-left: -35px;
+    margin-right: 0px;
+    height: 275px;
+    width: 1390px;
+
+}
+
+footer .contact {
+    /* border: 2px solid yellow; */
+    width: 33%;
+    height: 270px;
+    display: inline-block;
+    /* float: left; */
+    margin-left: 45px;
+    text-align: left;
+    padding: 20px;
+}
+
+footer .contact p {
+    padding: 10px;
+}
+
+footer .contact .s-links {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer .contact .cnt-us {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer .contact a .img {
+    /* color: crimson; */
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 25px;
+    color: black;
+}
+
+footer .app {
+    width: 33%;
+    /* border: 2px solid orange; */
+    float: right;
+    padding: 15px;
+}
+
+footer .app p {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer .app .pytm {
+    padding: 30px;
+}
+
+footer .ft-btn {
+    border-radius: 6px;
+    padding-top: 4px;
+}
+
+footer .cr {
+    display: inline-block;
+    /* border:  2px solid black; */
+    margin-top: 250px;
+    color: gray;
+}
+
+.bar {
+    padding: 22px;
+    font-size: 20px;
+}
+
+@media only screen and (min-width:200px) and (max-width:700px) {
+    #navbar .menu ul {
+        width: 100%;
+        height: 900px;
+        background-color: gray;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        visibility: hidden;
+    }
+
+    #navbar .menu ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    #navbar .menu ul li a {
+        color: white;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:576px) {
+    #home .heading h1 {
+        text-align: center;
+        width: 100%;
+        padding: 100px 70px 0px;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+
+    #home {
+        width: 100%;
+        height: 900px;
+        background-image: url("mosque-4.jpg");
+        background-position: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3); */
+    }
+    .heading button {
+        margin-left: 550px;
+        /* width: 100%; */
+        /* margin: auto; */
+        margin-left: 25%;
+        align-items: center;
+        background-image: url(button.png);
+        background-color: transparent;
+        border: 0;
+        margin-top: 10px;
+        padding: 14px 80px 14px 65px;
+        /* border: 2px solid red; */
+        background-repeat: no-repeat;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 13.5px;
+    }
+
+}
